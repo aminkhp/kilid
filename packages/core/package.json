@@ -8,12 +8,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "build": "yarn run clean && tsc --sourceMap false",
+    "watch": "tsc --watch",
+    "prepublishOnly": "yarn run build"
   },
   "dependencies": {
-    "base85": "^2.2.0",
-    "r85": "^1.1.2",
     "z85-codec": "^0.1.0"
   }
 }

@@ -4,7 +4,7 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
+    "start": "parcel serve ./src/index.html --cert .cert/kilid.crt --key .cert/kilid.key",
     "build": "parcel build ./src/index.html --no-source-maps --no-content-hash"
   },
   "dependencies": {

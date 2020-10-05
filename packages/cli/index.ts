@@ -16,4 +16,5 @@ prompt("Password: ", { method: "hide" })
   .then(Clipboard.write)
   .then(() => {
     console.log("Copied to Clipboard!");
-  });
+  })
+  .catch(() => {});
