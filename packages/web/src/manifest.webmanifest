@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined",
+  "name": "Kilid",
+  "short_name": "Kilid",
+  "description": "Key generator",
+  "background_color": "#eee",
+  "theme_color": "#757f9a",
+  "display": "standalone" ,
+  "icons": [
+    {
+      "src": "icons/shield_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "icons/shield_256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icons/shield_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icons/shield.svg",
+      "type": "image/svg",
+      "sizes": "any"
+    }
+  ]
+}

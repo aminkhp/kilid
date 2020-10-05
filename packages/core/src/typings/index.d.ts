@@ -1,11 +1,14 @@
 type Encoding = "ascii85" | "z85" | "ipv6";
-declare module "base85" {
-  export function decode(
-    data: string | ArrayBuffer,
-    encoding?: Encoding
-  ): ArrayBuffer;
-  export function encode(
-    data: string | ArrayBuffer,
-    encoding?: Encoding
-  ): string;
+declare module "r85" {
+  export default class R85 {
+    decode(
+      data: string | ArrayBuffer,
+      // encoding?: Encoding
+    ): ArrayBuffer;
+    encodeToString(
+      data: string,
+      // encoding?: Encoding
+    ): string;
+  }
+  
 }

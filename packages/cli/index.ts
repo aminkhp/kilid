@@ -3,7 +3,7 @@ import { Digest, Kilid } from "@kilid/core";
 import prompt from "password-prompt";
 import * as Clipboard from "clipboardy";
 
-const sha: Digest = (data: ArrayBuffer) => {
+const sha: Digest = async (data: ArrayBuffer) => {
   const hash = createHash("sha512");
   hash.update(new Uint8Array(data));
   return hash.digest();

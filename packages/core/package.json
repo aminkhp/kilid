@@ -12,6 +12,8 @@
     "watch": "tsc --watch"
   },
   "dependencies": {
-    "base85": "^2.2.0"
+    "base85": "^2.2.0",
+    "r85": "^1.1.2",
+    "z85-codec": "^0.1.0"
   }
 }
